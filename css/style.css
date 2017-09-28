@@ -1,0 +1,77 @@
+body {
+  background-color: tomato;
+}
+input[name="guay"] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+}
+div.container {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  background-color: #17a474;
+}
+input[name="guay"]::after {
+  content: "";
+  display: inline-block;
+  padding: 25px;
+  background-color: rgba(251, 251, 251, 0.19);
+  border-radius: 100%;
+  transition: .3s;
+}
+div.container > div {
+  position: absolute;
+  background-color: blue;
+  height: 1px;
+  width: 0;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform-origin: left;
+  transition: .3s ease-out;
+}
+div.container > div > a {
+  display: inline-block;
+  padding: 15px;
+  margin: -15px -14px 0 -14px;;
+  background-color: rgba(251, 251, 251, 0.19);
+  border-radius: 100%;
+}
+div.container > div:nth-child(2) {
+  transform: rotate(135deg);
+}
+div.container > div:nth-child(3) {
+  transform: rotate(225deg);
+}
+div.container > div:nth-child(4) {
+  transform: rotate(315deg);
+}
+div.container > div:nth-child(5) {
+  transform: rotate(405deg);
+}
+input[name="guay"]:checked::after {
+  padding: 15px;
+}
+input[name="guay"]:checked ~ div:nth-child(2) {
+  padding-left: 80px;
+  transform: rotate(225deg);
+}
+input[name="guay"]:checked ~ div:nth-child(3) {
+  padding-left: 80px;
+  transform: rotate(315deg);
+}
+input[name="guay"]:checked ~ div:nth-child(4) {
+  padding-left: 80px;
+  transform: rotate(405deg);
+}
+input[name="guay"]:checked ~ div:nth-child(5) {
+  padding-left: 80px;
+  transform: rotate(495deg);
+}
