@@ -54,6 +54,8 @@ body {
 }
 input[name="guay"] {
   cursor: pointer;
+	padding: 0;
+	margin: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -71,7 +73,7 @@ div.container {
 }
 input[name="guay"]::after {
   content: "";
-  display: inline-block;
+  display: block;
   padding: 25px;
   background-color: white;
   border-radius: 100%;
