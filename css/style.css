@@ -73,14 +73,13 @@ input[name="guay"]::after {
   content: "";
   display: inline-block;
   padding: 25px;
-  background-color: rgba(251, 251, 251, 0.19);
+  background-color: white;
   border-radius: 100%;
   transition: .3s;
 }
 div.container > div {
   position: absolute;
-  background-color: blue;
-  height: 1px;
+  height: 0;
   width: 0;
   z-index: -1;
   top: 50%;
@@ -91,8 +90,8 @@ div.container > div {
 div.container > div > a {
   display: inline-block;
   padding: 15px;
-  margin: -14.3px 0 0 -15px;
-  background-color: rgba(251, 251, 251, 0.19);
+  margin: -14.9px 0 0 -15px;
+  background-color: white;
   border-radius: 100%;
 }
 div.container > div:nth-child(2) {
