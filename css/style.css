@@ -108,6 +108,7 @@ div.container > div:nth-child(5) {
 }
 input[name="guay"]:checked::after {
   padding: 15px;
+	visibility: hidden;
 }
 input[name="guay"]:checked ~ div:nth-child(2) {
   padding-left: 80px;
