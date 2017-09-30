@@ -77,7 +77,6 @@ input[name="guay"]::after {
   padding: 25px;
   background-color: white;
   border-radius: 100%;
-  transition: .3s;
 }
 div.container > div {
   position: absolute;
@@ -111,6 +110,10 @@ div.container > div:nth-child(5) {
 input[name="guay"]:checked::after {
   padding: 15px;
 	visibility: hidden;
+	transition: .3s;
+}
+input[name="guay"]:not(:checked)::after {
+	transition: .3s;
 }
 input[name="guay"]:checked ~ div:nth-child(2) {
   padding-left: 80px;
